@@ -4,12 +4,13 @@
 Summary:	SPIR-V headers
 Name:		spirv-headers
 Version:	1.1_rev4
-Release:	1
+Release:	2
 License:	distributable
 Group:		Libraries
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{commit}/%{name}-%{commit}.tar.gz
 # Source0-md5:	73b64fcfb897e1b3c192602b59161360
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
+Conflicts:	spirv-tools < v2016.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
