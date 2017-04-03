@@ -8,7 +8,7 @@ Release:	4
 License:	distributable
 Group:		Libraries
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{commit}/%{name}-%{commit}.tar.gz
-# Source0-md5:	73b64fcfb897e1b3c192602b59161360
+# Source0-md5:	a230473aae8366730509fc023c69116b
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
 Conflicts:	spirv-tools-devel < v2016.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
