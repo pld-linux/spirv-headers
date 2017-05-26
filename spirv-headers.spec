@@ -2,6 +2,7 @@
 %define commit	c470b68225a04965bf87d35e143ae92f831e8110
 
 Summary:	SPIR-V headers
+Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 Version:	1.1_rev4
 Release:	4
@@ -16,15 +17,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains machine-readable files from the SPIR-V Registry.
 This includes:
-
-- Header files for various languages.
+- header files for various languages,
 - JSON files describing the grammar for the SPIR-V core instruction
   set, and for the GLSL.std.450 extended instruction set.
 
+%description -l pl.UTF-8
+Ten pakiet zawiera czytelne dla maszyny pliki z rejestru SPIR-V.
+Obejmują one:
+- pliki nagłówkowe dla różnych języków,
+- pliki JSON opisujące gramatykę podstawowego zestawu instrukcji
+  SPIR-V oraz rozszerzonego zestawu instrukcji GLSL.std.450.
+
 %prep
 %setup -qn SPIRV-Headers-%{commit}
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
