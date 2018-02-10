@@ -1,15 +1,15 @@
 
-%define commit	c470b68225a04965bf87d35e143ae92f831e8110
+%define commit	ce309203d7eceaf908bea8862c27f3e0749f7d00
 
 Summary:	SPIR-V headers
 Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
-Version:	1.1_rev4
-Release:	4
+Version:	1.2
+Release:	1
 License:	distributable
 Group:		Libraries
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{commit}/%{name}-%{commit}.tar.gz
-# Source0-md5:	a230473aae8366730509fc023c69116b
+# Source0-md5:	438ce54ce69563543c08d5ae83d3b394
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
 Conflicts:	spirv-tools-devel < v2016.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
