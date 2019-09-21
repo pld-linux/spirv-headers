@@ -3,8 +3,9 @@ Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 Version:	1.5.1
 Release:	1
-License:	distributable
+License:	MIT
 Group:		Libraries
+#Source0Download: https://github.com/KhronosGroup/SPIRV-Headers/releases
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	c22b4dcedb78ab16359a9554a8fa1695
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
