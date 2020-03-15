@@ -2,12 +2,12 @@ Summary:	SPIR-V headers
 Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 Version:	1.5.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/KhronosGroup/SPIRV-Headers/releases
-Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	c22b4dcedb78ab16359a9554a8fa1695
+Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{version}.corrected/%{name}-%{version}.corrected.tar.gz
+# Source0-md5:	c8af73a139d18a40706f800b1e35cb9d
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
 Conflicts:	spirv-tools-devel < v2016.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,7 +27,7 @@ Obejmują one:
   SPIR-V oraz rozszerzonego zestawu instrukcji GLSL.std.450.
 
 %prep
-%setup -qn SPIRV-Headers-%{version}
+%setup -qn SPIRV-Headers-%{version}.corrected
 
 %install
 rm -rf $RPM_BUILD_ROOT
