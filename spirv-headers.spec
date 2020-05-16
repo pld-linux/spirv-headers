@@ -10,6 +10,7 @@ Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{version}.correc
 # Source0-md5:	c8af73a139d18a40706f800b1e35cb9d
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
 Conflicts:	spirv-tools-devel < v2016.6
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
