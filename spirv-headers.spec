@@ -1,19 +1,19 @@
-# (commit 1feaf4414eb2b353764d01d88f8aa4bcc67b60db)
-%define		gitref	sdk-1.3.243.0
+# (commit 124a9665e464ef98b8b718d572d5f329311061eb)
+%define		gitref	sdk-1.3.261.1
 
 Summary:	SPIR-V headers
 Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 # see CMakeLists.txt /VERSION or include/spirv/unified1/spirv.h /SPV_VERSION + /SPV_REVISION (whichever is greater)
 Version:	1.5.5
-Release:	5
+Release:	6
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/KhronosGroup/SPIRV-Headers/tags
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{gitref}/SPIRV-Headers-%{gitref}.tar.gz
-# Source0-md5:	f3025c0e1a7846ac948a8118fbb85a9b
+# Source0-md5:	ab619ff9081e1d6cb8d87b1baa40f1d9
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
-BuildRequires:	cmake >= 3.0
+BuildRequires:	cmake >= 3.14
 BuildRequires:	rpmbuild(macros) >= 1.605
 Conflicts:	spirv-tools-devel < v2016.6
 BuildArch:	noarch
