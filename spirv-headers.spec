@@ -5,8 +5,8 @@ Summary:	SPIR-V headers
 Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 # see CMakeLists.txt /VERSION or include/spirv/unified1/spirv.h /SPV_VERSION + /SPV_REVISION (whichever is greater)
-Version:	1.5.5
-Release:	6
+Version:	1.6.1
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/KhronosGroup/SPIRV-Headers/tags
@@ -37,13 +37,11 @@ Obejmują one:
 %setup -qn SPIRV-Headers-%{gitref}
 
 %build
-install -d build
-cd build
 # relative CMAKE_INSTALL_INCLUDEDIR for .pc file
-%cmake .. \
+%cmake -B build \
 	-DCMAKE_INSTALL_INCLUDEDIR=include
 
-%{__make}
+%{__make} -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
