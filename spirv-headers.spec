@@ -1,17 +1,17 @@
 # (commit b824a462d4256d720bebb40e78b9eb8f78bbb305)
-%define		gitref	vulkan-sdk-1.4.335.0
+%define		gitref	vulkan-sdk-1.4.341.0
 
 Summary:	SPIR-V headers
 Summary(pl.UTF-8):	Pliki nagłówkowe SPIR-V
 Name:		spirv-headers
 # see CMakeLists.txt /VERSION or include/spirv/unified1/spirv.h /SPV_VERSION + /SPV_REVISION (whichever is greater)
 Version:	1.6.1
-Release:	8
+Release:	9
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/KhronosGroup/SPIRV-Headers/tags
 Source0:	https://github.com/KhronosGroup/SPIRV-Headers/archive/%{gitref}/SPIRV-Headers-%{gitref}.tar.gz
-# Source0-md5:	3808c16c503e1ce95510f498d5ee37b6
+# Source0-md5:	38bcd69036ec1443ac19b417bef8685e
 URL:		https://github.com/KhronosGroup/SPIRV-Headers
 BuildRequires:	cmake >= 3.14
 BuildRequires:	rpmbuild(macros) >= 1.605
